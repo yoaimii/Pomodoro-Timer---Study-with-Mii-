@@ -1,0 +1,137 @@
+/* Import a cute Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #eddedd; /* Soft pink background */
+    color: #F28888; /* Soft red for text */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+
+/* Timer Styles */
+#timer {
+    font-size: 5rem;
+    font-weight: bold;
+    background-color: #e2edca; /* Light green */
+    padding: 50px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 450px;
+}
+
+/* Center the buttons below the timer */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  gap: 15px; /* Adds space between buttons */
+  margin-top: 15px; /* Moves buttons slightly below the timer */
+}
+
+
+
+/* Buttons */
+button {
+    background-color: #F2B279; /* Warm orange */
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #F28888; /* Soft red */
+}
+
+
+/* Character Styles */
+#character {
+  display: block; /* Ensures proper alignment */
+  max-width: 450px; /* Adjust width to desired size */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px auto; /* Reduce space and center it */
+  padding: 0; /* Remove extra padding */
+  animation: bounce 2s infinite;
+}
+
+#character {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+
+#characterText {
+  font-size: 30px;
+  margin-top: 5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.notes-container {
+  position: fixed;
+  left: 20px;
+  top: 35%; /* Moves it higher up */
+  transform: translateY(-35%);
+  display: flex;
+  flex-direction: column; /* Makes heading stay above textarea */
+  align-items: flex-start; /* Aligns everything to the left */
+}
+
+/* Notes Styling */
+#notes {
+  width: 260px;
+  height: 150px;
+  background-color: #fff5f5;
+  border: 2px solid #CAD9A9;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for smooth feel */
+}
+
+/* Add soft glow when focused */
+#notes:focus {
+  border-color: #F28888; /* Soft red when active */
+  background-color: #f0e0d1; /* Light peach */
+  transform: scale(1.02); /* Slightly grows */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15); /* Glow effect */
+}
+
+/* Notes Heading */
+.notes-heading {
+  font-size: 1.5rem;
+  color: #F28888; /* Soft red */
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
+
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .notes-container {
+      left: 10px; /* Adjusts for smaller screens */
+      top: 30%; /* Moves it higher on small screens */
+      transform: translateY(-30%);
+  }
+
+  #notes {
+      width: 80%; /* Expands for smaller screens */
+      height: 150px;
+  }
+}

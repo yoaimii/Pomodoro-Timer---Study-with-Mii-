@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer - Study with Mii ִֶָ🐇་༘</title>
+    <link rel="stylesheet" href="stylespomodoro.css">
+</head>
+<body>
+
+    <h1>Pomodoro Timer</h1>
+    <div id="timer">25:00</div>
+    <div class="button-container">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+      <button id="skipBreak" style="display: none;">Skip Break</button>
+   
+  </div>
+  
+  <img id="character" src="happy.png" alt="Pomodoro Buddy">
+  <p id="characterText">Let’s get started! 😊</p>
+
+    <!-- Notes Section -->
+<div class="notes-container">
+  <h2 class="notes-heading">♡Notes♡</h2>
+  <textarea id="notes" placeholder="Write your notes here..."></textarea>
+</div>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('yoaimii', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#00b9fe',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+
+    <div class="footer">
+      <h2> <p>&copy; yoaimii. All rights reserved.</p></h2>
+    </div>
+
+    <script src="scriptpomodoro.js"></script>
+</body>
+</html>
